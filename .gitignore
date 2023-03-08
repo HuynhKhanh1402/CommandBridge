@@ -1,0 +1,4 @@
+# Project exclude paths
+/bungee/target/
+/distribution/target/
+/spigot/target/

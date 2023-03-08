@@ -1,0 +1,5 @@
+config-version: 1
+
+# Tên của server này trong file config của bungeecord
+# Lưu ý: Bạn cần phải chỉnh đúng tên để plugin hoạt động bình thường
+server-name: servername

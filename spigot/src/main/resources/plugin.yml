@@ -1,0 +1,6 @@
+name: CommandBridge
+version: '${project.parent.version}'
+main: me.khanh.plugins.commandbridge.spigot.CommandBridge
+api-version: 1.16
+authors: [ KhanhHuynh ]
+description: CommandBridge

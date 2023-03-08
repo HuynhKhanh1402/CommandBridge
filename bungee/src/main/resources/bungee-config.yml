@@ -1,0 +1,29 @@
+#####################################################################################################
+#                                                                                                   #
+#  Lưu ý: Bạn phải chỉnh server-name trong config của plugin này ở server backend trùng với tên     #
+#                      của server trong file của bungeecord.yml để hoạt động                        #
+#  Placeholder(s): %player%                                                                         #
+#                                                                                                   #
+#####################################################################################################
+
+config-version: 1
+
+# Lệnh được truyền đi khi người chơi vào máy chủ
+onJoin:
+  # Khi người chơi vào máy chủ server1 thì server1 sẽ chạy lệnh msg"
+  server1:
+    - "msg %player% server1"
+  server2:
+    - "msg %player% server2"
+
+# Lệnh được truyền đến máy chủ mà người chơi đi tới khi mà người chơi di chuyển giữa các máy chủ
+onSwitch:
+  # Khi người chơi chuyển từ server1 sang server2 thì sẽ chạy lệnh msg ở server2
+  # Bạn có thể dùng ký tự "*" để plugin hiểu là bất cứ server nào. Ví dụ: from: * sẽ được hiểu là đến từ bất cứ máy chủ nào
+  1:
+    from: server1
+    to: server2
+    commands:
+      - "msg %player% bạn vừa do chuyển từ server1 đến server2"
+# 2:
+#   ...
